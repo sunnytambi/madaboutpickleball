@@ -185,6 +185,11 @@ section.success {
     background: #{{ site.color.primary }};
 }
 
+section.success .panel-body {
+    color: black;
+    background: inherit;
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;

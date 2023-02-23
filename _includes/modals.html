@@ -1,6 +1,5 @@
 <!-- Portfolio Modals -->
-{% for post in site.posts %}
-<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
+<div class="portfolio-modal modal fade" id="coach-vrushali" tabindex="-1" role="dialog"
   aria-hidden="true">
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
@@ -13,29 +12,12 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
-            <h2>{{ post.title }}</h2>
+            <h2>Coach Vrushali Thakare</h2>
             <hr class="star-primary">
-            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.description %}
-            <p>{{ post.description }}</p>
-            {% endif %}
-            <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client:
-                <strong>{{ post.client }}</strong>
-              </li>
-              {% endif %}
-              {% if post.project-date %}
-              <li>Date:
-                <strong>{{ post.project-date }}</strong>
-              </li>
-              {% endif %}
-              {% if post.category %}
-              <li>Service:
-                <strong>{{ post.category }}</strong>
-              </li>
-              {% endif %}
-            </ul>
+            <img src="img/Vrushali.jpg" class="img-responsive img-centered img-circle" style="width:50%" alt="Vrushali Thakare">
+            <h3>IPF Certified Coach</h3>
+            <p>​She is an International Pickleball star having many Gold medals under her hat. Vrushali knows how to bring the best Pickleball from a player. She also works on physical and mental fitness to make you a complete player.</p>
+            
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
           </div>
@@ -44,4 +26,31 @@
     </div>
   </div>
 </div>
-{% endfor %}
+
+<div class="portfolio-modal modal fade" id="coach-ajay" tabindex="-1" role="dialog"
+  aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>Coach Ajay Choudhari</h2>
+            <hr class="star-primary">
+            <img src="img/Ajay.jpg" class="img-responsive img-centered img-circle" style="width:50%" alt="Ajay Choudhari">
+            <h3>IPF Certified Coach</h3>
+            <p>While his pickleball coaching style is fun, and his teaching approach engaging and insightful, his passion for pickleball makes him a great Pickleball instructor</p>
+            
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+              Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
